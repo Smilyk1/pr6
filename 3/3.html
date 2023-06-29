@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Перевірка</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Що можна пити?</h1>
+    <div class="container">
+      <div>
+        <input type="radio" name="variant" value="jump">
+        <label>Вода</label><br>
+        <input type="radio" name="variant" value="run">
+        <label>Нафта</label><br>
+        <input type="radio" name="variant" value="swim">
+        <label>Ртуть</label><br>
+      </div>
+
+      <button onclick="checkOption()">Перевірити</button>
+      <p id="result"></p>
+    </div>
+    <div class="link">
+      <a href="../index.html">Головна</a>
+    </div>
+
+    <script>
+      function checkOption() {
+        var selectedOption = document.querySelector('input[name="variant"]:checked');
+        var resultText = document.getElementById("result");
+        var correctOption = "jump";
+
+        if (selectedOption) {
+          if (selectedOption.value === correctOption) {
+            resultText.textContent = "Ви обрали вірний варіант!";
+          } else {
+            resultText.textContent = "Ви обрали неправильний варіант.";
+          }
+        } else {
+          resultText.textContent = "Будь ласка, оберіть один з варіантів.";
+        }
+      }
+    </script>
+  </body>
+</html>

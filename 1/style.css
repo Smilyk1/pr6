@@ -1,0 +1,39 @@
+body {
+  transition: background-color 0.5s ease;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #a7a1a1;
+
+}
+
+h1 {
+  display: block;
+  margin-bottom: 10px;
+}
+
+select {
+  padding: 5px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.link a {
+  position: fixed;
+  margin: 10px;
+  left: 50%;
+  transform: translateX(-55%);
+  bottom: 0;
+  padding: 15px 25px;
+  background-color: #333333;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  font-size: 18px;
+  cursor: pointer;
+}
+.link a:hover{
+  background-color: #d0662d;
+}
+*{  transition: background-color 0.2s ease;
+}
